@@ -353,19 +353,46 @@
                 </ul>     
            </div> 
            <div class="futer-input-section">
-               <h3>Подпишитесь на рассылку</h3>
-               <form class="futer-form">
-                   <input type="text" class="futer-input" placeholder="E-mail">
-                   <button type="submit" class="futer-btn"><span class="text-btn-futer">Подписаться</span></button>
-               </form>
-           </div>
-
+                <h3>Подпишитесь на рассылку</h3>
+                <form class="futer-form">
+                <input type="email" name="user-email" class="futer-input" placeholder="E-mail">
+                <button type="submit" class="futer-btn"><span class="text-btn-futer">Подписаться</span></button>
+            </form>
         </div>    
+        </div>
+
+
 
     </section>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <h3>Оставьте свои данные, мы вам перезвоним</h3>
+            <form>
+                <div>
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-input" name="user-name" id="name">
+                </div>
+                <div>
+                    <label for="tel" class="form-label">Телефон</label>
+                    <input type="tel" class="form-input" name="user-tel" id="tel">
+                </div>
+                <div>
+                    <label for="email" class="form-label">Почта</label>
+                    <input type="email" class="form-input" name="user-email" id="email">
+                </div>
+                <div>
+                    <label for="message" class="form-label">Комментарий</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                </div>
+                <div>
+                    <label for="checkbox" class="form-label">Соглашаюсь с рассылкой</label>
+                    <input type="checkbox" class="message-input" name="user-checkbox" id="checkbox" width="448px">
+                </div>   
+                <button type="submit" class="button-hero"><span class="text-button-hero">Отправить</span></button>            
+
+            </form>
+
             <button class="close-btn" data-modal-close>
                 <svg class="close-icon">
                 </svg>
