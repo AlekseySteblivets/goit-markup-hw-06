@@ -367,23 +367,34 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <h3>Оставьте свои данные, мы вам перезвоним</h3>
+            <h3 class="title-modal">Оставьте свои данные, мы вам перезвоним</h3>
             <form>
-                <div>
+                <div class="modal-blocks">
                     <label for="name" class="form-label">Имя</label>
                     <input type="text" class="form-input" name="user-name" id="name">
+                    <svg class="modal-icons-svg">
+                        <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                    </svg>
+                    
                 </div>
-                <div>
+                <div class="modal-blocks">
                     <label for="tel" class="form-label">Телефон</label>
                     <input type="tel" class="form-input" name="user-tel" id="tel">
+                    <svg class="modal-icons-svg">
+                        <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                        
+                    </svg>
                 </div>
-                <div>
+                <div class="modal-blocks">
                     <label for="email" class="form-label">Почта</label>
                     <input type="email" class="form-input" name="user-email" id="email">
+                    <svg class="modal-icons-svg">
+                        <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                    </svg>
                 </div>
                 <div>
                     <label for="message" class="form-label">Комментарий</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    <textarea name="message" class="form-textarea" id="message" cols="30" rows="10" placeholder="Введите текст"></textarea>
                 </div>
                 <div>
                     <label for="checkbox" class="form-label">Соглашаюсь с рассылкой</label>
