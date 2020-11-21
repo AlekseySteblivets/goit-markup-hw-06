@@ -352,17 +352,14 @@
                     </li>                                                                  
                 </ul>     
            </div> 
-           <div class="futer-input-section">
+            <div class="futer-input-section">
                 <h3>Подпишитесь на рассылку</h3>
                 <form class="futer-form">
                 <input type="email" name="user-email" class="futer-input" placeholder="E-mail">
                 <button type="submit" class="futer-btn"><span class="text-btn-futer">Подписаться</span></button>
-            </form>
-        </div>    
+                </form>
+            </div>    
         </div>
-
-
-
     </section>
 
     <div class="backdrop is-hidden" data-modal>
@@ -394,11 +391,13 @@
                 </div>
                 <div>
                     <label for="message" class="form-label">Комментарий</label>
-                    <textarea name="message" class="form-textarea" id="message" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    <textarea name="message" class="form-textarea" id="message" cols="30" rows="5" placeholder="Введите текст"></textarea>
                 </div>
-                <div>
-                    <label for="checkbox" class="form-label">Соглашаюсь с рассылкой</label>
-                    <input type="checkbox" class="message-input" name="user-checkbox" id="checkbox" width="448px">
+                <div class="modal-blocks">
+                    
+                    <label for="checkbox" class="check-label"><span>Соглашаюсь с рассылкой и принимаю </span><span>Условия договора</span></label>
+                    <input type="checkbox" class="check-class" name="user-checkbox" id="checkbox" width="448px">
+                    <span class="checkbox-icon"></span>
                 </div>   
                 <button type="submit" class="button-hero"><span class="text-button-hero">Отправить</span></button>            
 
