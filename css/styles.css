@@ -845,18 +845,26 @@ img {
     right: 8px;
     top: 8px;
     background-color: var (var(--wight-text-cl));
-    border: 0;
+    /* border: 0; */
     padding: 0;
     cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
 }
 
 .close-icon {
-    background-image: url(../images/close.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
+    transition: fill var(--time-transition);
+}
+
+.close-btn:hover .close-icon {
+    fill: var(--accent-cl);
 }
 
 .futer-input-section {
@@ -1058,4 +1066,9 @@ img {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.color-check-text {
+    color: var(--accent-cl);
+    text-decoration: underline;
 }
