@@ -1047,6 +1047,7 @@ img {
     height: 15px;
     background-image: url(../images/checkbox.svg);
     background-position: center;
+    z-index: -1;
 }
 
 .check-class:checked + .checkbox-icon {
